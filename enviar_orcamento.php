@@ -1,24 +1,20 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitizando os dados recebidos
-    $nome = htmlspecialchars($_POST['nome']);
-    $email = htmlspecialchars($_POST['email']);
-    $telefone = htmlspecialchars($_POST['telefone']);
-    $descricao = htmlspecialchars($_POST['mensagem']);
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $mensagem = $_POST['mensagem'];
 
-    // Configurando o e-mail
-    $to = "maryaluiza.rocha@gmail.com"; 
-    $subject = "Solicitação de Orçamento";
-    $message = "Nome: $nome\nE-mail: $email\nTelefone: $telefone\nDescrição: $descricao";
-    $headers = "From: $email\r\n";
+    // Aqui você pode adicionar código para enviar o e-mail
+    $to = "maryaluiza.rocha@gmail.com";
+    $subject = "Orçamento solicitado por $nome";
+    $body = "Nome: $nome\nEmail: $email\nTelefone: $telefone\nMensagem: $mensagem";
+    $headers = "From: $email";
 
-    // Enviando o e-mail
-    if (mail($to, $subject, $message, $headers)) {
-        // Mensagem de sucesso
-        echo "<script>alert('Orçamento enviado com sucesso!');</script>";
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Email enviado com sucesso.";
     } else {
-        // Mensagem de erro
-        echo "<script>alert('Erro ao enviar o orçamento.');</script>";
+        echo "Falha no envio do email.";
     }
 } else {
     echo "Método não permitido.";
