@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte e Madeira Marcenaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Arte e Madeira</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#nossos-servicos">Nossos Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="contato">
+                <p>Telefone: (31) 98678-2122</p> 
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="nossos-servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos">
+                <div class="servico">
+                    <h3>Móveis Planejados</h3>
+                    <p>Desenvolvemos móveis sob medida para otimizar seus espaços.</p>
+                </div>
+                <div class="servico">
+                    <h3>Brinquedos Pedagógicos</h3>
+                    <p>Produzimos brinquedos que estimulam a criatividade e aprendizado.</p>
+                </div>
+                <div class="servico">
+                    <h3>Camas Montessori</h3>
+                    <p>Camas que promovem a autonomia e segurança das crianças.</p>
+                </div>
+                <div class="servico">
+                    <h3>Estantes e Prateleiras</h3>
+                    <p>Estantes personalizadas para organizar seu ambiente.</p>
+                </div>
+                <div class="servico">
+                    <h3>Mesas de Jantar</h3>
+                    <p>Mesas elegantes e funcionais para reunir a família.</p>
+                </div>
+                <div class="servico">
+                    <h3>Decoração de Interiores</h3>
+                    <p>Projetos personalizados para dar vida ao seu espaço.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria-container">
+                <div class="galeria-item">
+                    <img src="imagens/imagem1.jpeg" alt="Cama Montessori">
+                    <div class="descricao">Cama Montessori</div>
+                </div>
+                <div class="galeria-item">
+                    <img src="imagens/imagem2.jpeg" alt="Cama com escorregador">
+                    <div class="descricao">Cama com escorregador</div>
+                </div>
+                <div class="galeria-item">
+                    <img src="imagens/imagem3.jpeg" alt="Mesa, cadeira e estante infantil">
+                    <div class="descricao">Mesa, cadeira e estante infantil</div>
+                </div>
+                <div class="galeria-item">
+                    <img src="imagens/imagem4.jpeg" alt="Estante em madeira tratada">
+                    <div class="descricao">Estante em madeira tratada</div>
+                </div>
+                <div class="galeria-item">
+                    <img src="imagens/imagem5.jpeg" alt="Decorações">
+                    <div class="descricao">Decorações</div>
+                </div>
+                <div class="galeria-item">
+                    <img src="imagens/imagem6.jpeg" alt="Brinquedos de madeira">
+                    <div class="descricao">Brinquedos de madeira</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog ou Artigos</h2>
+            <article>
+                <h3>Como Escolher o Móvel Ideal para Sua Casa</h3>
+                <p>Descubra dicas essenciais para escolher os móveis que melhor se adequam ao seu espaço e estilo.</p>
+                <a href="https://vidasimples.co/colunista/5-maneiras-de-escolher-moveis-certos-para-a-sua-casa/" target="_blank">Leia mais</a>
+            </article>
+            <article>
+                <h3>Dicas de Manutenção para Móveis de Madeira</h3>
+                <p>Mantenha seus móveis em ótimo estado com essas dicas de manutenção.</p>
+                <a href="https://www.decorise.com.br/blog/cuidados-para-aumentar-a-durabilidade-dos-moveis-de-madeira" target="_blank">Leia mais</a>
+            </article>
+        </section>
+
+        <section id="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <div class="faq-item">
+                <h3>Qual é o tempo de entrega dos serviços?</h3>
+                <p>O tempo de entrega varia conforme o projeto, mas geralmente leva entre 15 a 30 dias úteis.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Vocês atendem em toda a região?</h3>
+                <p>Sim, atendemos em diversas regiões de BH e região metropolitana. Entre em contato para mais informações.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quais tipos de madeira vocês utilizam?</h3>
+                <p>Trabalhamos com várias espécies de madeira, sempre priorizando a qualidade e sustentabilidade.</p>
+            </div>
+        </section>
+
+        <section id="orcamento">
+            <h2>Solicite um Orçamento</h2>
+            <form id="form-orcamento" action="enviar_orcamento.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Orçamento</button>
+            </form>
+        </section>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através dos seguintes meios:</p>
+            <ul>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <strong>Telefone:</strong> (31) 98678-2122
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong> <a href="mailto:maryaluiza.rocha@gmail.com"> maryaluiza.rocha@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <strong>Instagram:</strong> <a href="https://www.instagram.com/artesanomarcenaria" target="_blank"> @artesanomarcenaria</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Artesano Marcenaria - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
